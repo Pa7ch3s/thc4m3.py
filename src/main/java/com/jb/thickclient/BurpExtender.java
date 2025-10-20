@@ -143,7 +143,7 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IProxyL
             String burpHost = InetAddress.getLocalHost().getHostAddress();
             int burpPort = 8080;
 
-            IProxyHistory[] hist = callbacks.getProxyHistory();
+            IHttpRequestResponse[] hist = callbacks.getProxyHistory();
             if (hist != null && hist.length > 0) {
                 try { burpPort = hist[0].getHttpService().getPort(); } catch (Throwable ignored) {}
             }
