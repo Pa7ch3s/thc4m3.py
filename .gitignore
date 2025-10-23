@@ -1,8 +1,0 @@
-/build/
-/.gradle/
-/idea/
-/out/
-libs/
-*.iml
-*.class
-*.pac
